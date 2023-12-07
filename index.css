@@ -63,7 +63,7 @@ body {
 
 .search-bar_text {
     color: #999999;
-    font-size: 13px;    
+    font-size: 13px;
     font-family: General Sans;
     font-weight: 500;
     word-wrap: break-word;
@@ -75,9 +75,11 @@ body {
     left: 8%;
     width: 40%;
 }
-.search-bar_text :nth-child(2){
+
+.search-bar_text :nth-child(2) {
     margin-left: 10px;
 }
+
 .search_Input {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -109,6 +111,7 @@ body {
 .header_mid_right {
     justify-content: right;
     align-items: center;
+    gap: 5px;
 }
 
 .header_mid_right p {
@@ -164,7 +167,10 @@ body {
 
 .header_bot .right p {
     margin-left: 10px;
-    width: 80%;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 13px
 }
 
 .header_bot .right svg {
@@ -193,6 +199,7 @@ body {
     color: var(--Title-fashion, #111);
     font-weight: 500;
     font-family: General Sans;
+    border: none;
 }
 
 .main_image .text,
@@ -225,7 +232,6 @@ body {
     justify-content: center;
     border-radius: 5px;
     background: #332B3C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
     height: 200px;
     width: 100%;
@@ -251,9 +257,10 @@ body {
     width: 50%;
 
 }
-.bg_image img{
+
+.bg_image img {
     width: 110%;
-    
+
 }
 
 .bg_text :nth-child(1),
@@ -286,17 +293,16 @@ body {
 .avatar_info {
     width: calc((100% - 20px) / 6);
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
     display: inline-flex;
+    gap: 15px;
 }
 
 .avatar_image {
-    width: 60%;
-    height: 100%;
     background-color: #F1F3F7;
     border-radius: 9999px;
+
 }
 
 .avatar_image img {
@@ -304,14 +310,24 @@ body {
     border-radius: 9999px;
 }
 
-.avatar_info .main_text,
-.avatar_info .text {
+.avatar_info .main_text {
     text-align: center;
     color: #111111;
     font-size: 14px;
     font-family: General Sans;
     font-weight: 600;
     word-wrap: break-word
+}
+
+.avatar_info .main_text :nth-child(2) {
+    color: #999999;
+    font-weight: 500;
+
+}
+
+.main_text {
+    height: 100%;
+    width: 100%;
 }
 
 .avatar_info .text {
@@ -327,6 +343,44 @@ body {
     font-family: General Sans;
     font-weight: 600;
     word-wrap: break-word
+}
+
+
+.top_deal_header .box .box_text {
+    color: white;
+    font-size: 14px;
+    font-family: General Sans;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.top_deal_header_box p {
+    margin-bottom: 0px;
+    margin-right: 15px;
+}
+
+.top_deal_header_box {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_box {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.top_deal_header .box {
+    height: 38px;
+    background: #DD3327;
+    width: calc((100% - 26px) / 4);
+    border-radius: 3px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
 }
 
 .top_deal_header p,
@@ -395,12 +449,16 @@ body {
 
 .top_deal_text .price {
     color: #00A2C2;
+    font-family: General Sans;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .top_deal_text .price span {
     color: #515D66;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: General Sans;
     text-decoration: line-through
 }
 
@@ -413,7 +471,6 @@ body {
 .top_selling_text {
     display: inline-flex;
     justify-content: flex-start;
-    gap: 10px;
     flex-direction: column;
 }
 
@@ -458,12 +515,13 @@ body {
 }
 
 .top_deal_text img {
-    height: 12px;
-    width: 25%;
+    width: 30%;
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 .top_deal_info {
-    width: 20%;
+    width: calc((100% - 20px) /5);
 }
 
 .Top_selling {
@@ -484,19 +542,28 @@ body {
     padding: 10px;
     display: flex;
     border-radius: 5px;
-
+    align-items: center;
     justify-content: space-around;
 
 }
 
 .top_selling_text {
     width: 50%;
-    margin: 10px 0px 0px 10px;
 }
 
+.top_selling_text .price {
+    margin-top: 15px;
+}
+
+.top_selling_text img {
+    width: 33%;
+    margin-top: 5px;
+}
+
+
 .top_selling_img {
-    width: 50%;
-    position: relative;
+    width: 45%;
+
 }
 
 .top_selling_img img {
@@ -712,24 +779,6 @@ body {
         display: flex;
     }
 
-    .top_deal_text img {
-        width: 33%;
-    }
-
-    .star {
-        width: 100%;
-    }
-
-}
-
-@media only screen and (min-width: 1440px) {
-    .star {
-        width: 60%;
-    }
-
-    .top_deal_text img {
-        width: 40%;
-    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -921,6 +970,11 @@ body {
     }
 
 }
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .top_deal_header_box{
+        width: 30%;
+    }
+}
 
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
     .img_down {
@@ -970,5 +1024,8 @@ body {
 
     .top_deal_text img {
         width: 19%;
+    }
+    .top_deal_header_box{
+        width: 50%;
     }
 }
