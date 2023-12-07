@@ -36,9 +36,10 @@ body {
     word-wrap: break-word
 }
 
-.logo{
-  justify-content: start;
+.logo {
+    justify-content: start;
 }
+
 .login,
 .cart {
     width: 40%;
@@ -150,7 +151,8 @@ body {
     margin-left: 10px;
     width: 80%;
 }
-.header_bot .right svg{
+
+.header_bot .right svg {
     width: 10%;
 }
 
@@ -382,6 +384,10 @@ body {
     font-size: 15px;
     text-decoration: line-through
 }
+.star {
+    width: 60%;
+}
+
 
 .top_deal_text,
 .top_selling_text {
@@ -429,6 +435,10 @@ body {
 
 .top_deal_main img {
     width: 100%;
+}
+.top_deal_text img {
+    height: 12px;
+    width: 25%;
 }
 
 .top_deal_info {
@@ -640,8 +650,12 @@ body {
     .header_mid {
         padding: 10px 0px 10px 0px;
     }
-    .main_image .text{
+
+    .main_image .text {
         width: 100%;
+    }
+    .star {
+        width: 130%;
     }
 }
 
@@ -675,7 +689,21 @@ body {
     .top_deal_main {
         display: flex;
     }
+    .top_deal_text img{
+        width: 33%;
+    }
+    .star{
+        width: 100%;
+    }
 
+}
+@media  only screen and (min-width: 1440px) {
+    .star{
+        width: 60%;
+    }
+    .top_deal_text img {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -909,7 +937,11 @@ body {
     .bg_3 {
         justify-content: space-around
     }
-    .main_image .text{
+
+    .main_image .text {
         width: 100%;
+    }
+    .top_deal_text img{
+        width: 19%;
     }
 }
