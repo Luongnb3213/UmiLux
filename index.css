@@ -36,6 +36,9 @@ body {
     word-wrap: break-word
 }
 
+.logo{
+  justify-content: start;
+}
 .login,
 .cart {
     width: 40%;
@@ -144,8 +147,11 @@ body {
 }
 
 .header_bot .right p {
-    margin-left: 5px;
-    width: 85%;
+    margin-left: 10px;
+    width: 80%;
+}
+.header_bot .right svg{
+    width: 10%;
 }
 
 /* main */
