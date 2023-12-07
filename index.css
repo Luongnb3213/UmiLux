@@ -362,7 +362,7 @@ body {
 .top_deal_header_box {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -392,11 +392,15 @@ body {
     font-weight: 500;
     word-wrap: break-word
 }
+.top_deal_header p{
+    margin-bottom: 0px;
+}
 
 .top_deal_header {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .top_deal_text .category,
@@ -419,7 +423,7 @@ body {
 .Deal_Pro_info .Deal_Pro_text {
     color: #111111;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .icon-block {
@@ -474,8 +478,8 @@ body {
     flex-direction: column;
 }
 
-.top_selling_text .price,
-.top_selling_text .name {
+.top_selling_text .price
+{
     color: #111111;
     font-size: 14px;
     font-family: General Sans;
@@ -971,9 +975,6 @@ body {
 
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .top_deal_header_box{
-        width: 30%;
-    }
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
