@@ -1,4 +1,3 @@
-
 @import url("https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap");
 * {
   margin: 0px;
@@ -8,23 +7,21 @@ body {
   background-color: white;
 }
 .header_uml {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 4;
 }
-.main_uml {
-  margin-top: 12%;
-}
 
 .header_top,
 .header_mid {
+  padding: 0px 50px;
   background-color: #253380;
   color: white;
 }
 .header_mid {
-  padding: 20px 0px;
+  padding: 20px 50px;
 }
 .header_top {
   border-bottom: 1px solid #ffffff54;
@@ -205,6 +202,7 @@ body {
   color: white;
 }
 .header_bot {
+  padding: 0 50px;
   background-color: #fff;
   font-size: 14px;
   font-family: General Sans;
@@ -396,6 +394,7 @@ body {
 .bg,
 .bg_2,
 .bg_3 {
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,6 +452,7 @@ body {
 }
 
 .product-list {
+  padding: 0 50px;
   margin-top: 60px;
   display: flex;
   justify-content: space-around;
@@ -513,7 +513,9 @@ body {
   font-weight: 300;
   color: #999999;
 }
-
+.Top_deal {
+  padding: 0 50px;
+}
 .top_deal_header h2,
 .Top_selling h2,
 .mobile_nav_bar {
@@ -643,6 +645,7 @@ body {
 
 .Deal_Pro {
   margin: 60px 0px 60px 0px;
+  padding: 0px 50px;
 }
 .deal-pro_header {
   margin-bottom: 30px;
@@ -748,6 +751,7 @@ body {
   justify-content: space-between;
 }
 .image_list {
+  padding: 0 50px;
   margin-top: 60px;
 }
 .top_deal_main img {
@@ -765,7 +769,7 @@ body {
 }
 
 .Top_selling {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 50px 60px 50px;
   margin-top: 60px;
   background-color: #f1f3f7;
 }
@@ -823,7 +827,7 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 50px 40px 50px;
 }
 
 .help_info {
@@ -874,6 +878,7 @@ body {
 
 .footer {
   background: #f1f3f7;
+  padding: 0px 50px;
 }
 
 .footer_contact .head {
@@ -953,7 +958,7 @@ body {
 }
 
 .mobile_nav_bar {
-  position: fixed;
+  position: sticky;
   display: none;
   width: 100%;
   z-index: 2;
@@ -1046,6 +1051,47 @@ a {
 }
 
 @media only screen and (max-width: 739px) {
+  .footer_info svg {
+    transition: transform linear 0.3s;
+    width: 15px;
+    height: 15px;
+  }
+  .footer_tablet {
+    display: none;
+  }
+  .header_mid {
+    padding: 15px 15px;
+  }
+  .bg,
+  .bg_2,
+  .bg_3 {
+    padding: 0 15px;
+  }
+  .bg_text :nth-child(1),
+  .bg_text :nth-child(2) {
+    font-size: 18px;
+  }
+  #carouselExample {
+    padding: 0 15px;
+  }
+  .image_list {
+    padding: 0 15px;
+  }
+  .Top_selling {
+    padding: 30px 15px;
+  }
+  .Top_deal {
+    padding: 0 15px;
+  }
+  .Deal_Pro {
+    padding: 0 15px;
+  }
+  .footer {
+    padding: 0px 15px;
+  }
+  .app {
+    overflow: hidden;
+  }
   .top_deal_text {
     width: 90%;
   }
@@ -1057,6 +1103,7 @@ a {
   }
 
   .help {
+    padding: 40px 15px;
     flex-direction: column;
   }
 
@@ -1069,11 +1116,6 @@ a {
     align-items: center;
     padding: 0px 10px 12px 12px;
   }
-
-  .header_mid {
-    padding: 15px 0px;
-  }
-
   .main_image .text {
     font-size: 2.25rem;
     width: 90%;
@@ -1146,6 +1188,9 @@ a {
   #top_deal_product {
     display: none;
   }
+  .footer_info svg {
+    display: none;
+  }
 
   .Top_selling-product {
     display: flex;
@@ -1153,12 +1198,12 @@ a {
   .top_deal_main {
     display: flex;
   }
+  .footer_tablet {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-  .main_uml {
-    margin-top: 13%;
-  }
   .logo1 svg path {
     fill: white;
   }
@@ -1209,10 +1254,9 @@ a {
   .rotate {
     transform: rotateX(180deg);
   }
-
   @keyframes godown {
     0% {
-      transform: translateY(-200px);
+      height: 0px;
       opacity: 0;
     }
 
@@ -1221,7 +1265,7 @@ a {
     }
 
     100% {
-      transform: translateY(0px);
+      height: 170px;
       opacity: 1;
     }
   }
@@ -1352,11 +1396,37 @@ a {
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .bg,
+  .bg_2,
+  .bg_3 {
+    padding: 0 15px;
+  }
+  .bg_text :nth-child(1),
+  .bg_text :nth-child(2) {
+    font-size: 18px;
+  }
+  #carouselExample {
+    padding: 0 15px;
+  }
+  .image_list {
+    padding: 0 15px;
+  }
+  .Top_selling {
+    padding: 30px 15px;
+  }
+  .Top_deal {
+    padding: 0 15px;
+  }
+  .Deal_Pro {
+    padding: 0 15px;
+  }
+  .footer {
+    padding: 0px 15px;
+  }
   .mobile_nav_bar {
     width: 50%;
   }
   .help_info {
-    width: 100%;
     padding: 0px 15px;
   }
   .main_image .text {
@@ -1378,7 +1448,7 @@ a {
   }
 
   .logo {
-    padding: 10px 0px;
+    padding: 10px 15px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -1395,14 +1465,14 @@ a {
 
   .searchBar {
     justify-content: space-between;
-    padding: 0px;
+    padding: 0px 15px;
     width: 100%;
   }
   .search_Input {
     flex: 1;
   }
   .searchBar svg {
-    left: 2%;
+    left: 4%;
   }
   .header_mid {
     padding: 15px;
@@ -1419,7 +1489,6 @@ a {
     height: 330px;
   }
   .bg_text {
-    padding-left: 20px;
     width: 30%;
   }
   .bg_image {
@@ -1490,9 +1559,24 @@ a {
     transition: opacity linear 0.2s;
   }
   .footer_input input {
-    flex: 4;
+    flex: 3;
   }
   .footer_input .btn_Subcribe {
     flex: 1;
+  }
+  .help_info {
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 0 15px;
+  }
+  .help {
+    padding: 34px 0px;
+    flex-wrap: wrap;
+  }
+  .tablet-mobile {
+    display: none;
+  }
+  .pc {
+    display: block;
   }
 }
