@@ -289,7 +289,7 @@ body {
   width: 45px;
   height: 22px;
   text-align: center;
-  border-radius: 14px; 
+  border-radius: 14px;
   margin-left: 5px;
 }
 .home:hover .home-item-list {
@@ -636,7 +636,7 @@ body {
   height: 100%;
   border-radius: 5px;
 }
-.Deal_Pro_image:hover img{
+.Deal_Pro_image:hover img {
   transform: scale(1.1);
 }
 
@@ -1125,8 +1125,11 @@ a {
   .help_info {
     width: 100%;
   }
-  .footer_input{
+  .footer_input {
     flex-direction: column;
+  }
+  .searchBar svg {
+    left: 8%;
   }
 }
 
@@ -1149,7 +1152,6 @@ a {
   .top_deal_main {
     display: flex;
   }
-
 }
 
 @media screen and (max-width: 1023px) {
